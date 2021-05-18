@@ -1,0 +1,19 @@
+body{
+    background-color: #faf2da;
+}
+
+.page-title{
+    font-family: 'Kaushan Script', cursive;
+    font-size:60px;
+    text-align:center;
+    animation: page-title 1s ease-in-out infinite alternate;
+}
+@keyframes page-title{
+    from {
+      text-shadow: 0 0 10px #c5d4a0, 0 0 20px #98a37e, 0 0 30px #717a5c, 0 0 40px #5c634f, 0 0 50px #4e5341, 0 0 60px #2c3023, 0 0 70px #2e3126;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #e7e7e7, 0 0 20px #e3f5bb, 0 0 30px #97a380, 0 0 40px #737a62, 0 0 50px #5e664c, 0 0 60px #565c47, 0 0 70px #1e2019;
+    }
+  }

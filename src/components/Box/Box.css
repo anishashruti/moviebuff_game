@@ -1,0 +1,28 @@
+.box-container{
+    display:flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    flex-direction:column;
+    flex-grow:1;
+    background-color: #8e9775c2;
+    border-radius: 20px;
+    padding: 25px;
+    flex-wrap: wrap;
+    box-shadow:10px 10px 10px 10px #4a503da9;
+}
+.timer-container{
+    background-color: #faf2da;
+    padding: 15px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    width: 100px;
+    box-shadow:3px 3px 3px 3px #4a503d77;
+}
+
+.timer{
+    font-size:36px;
+    font-weight:600px;
+    margin: 0px;
+    text-align: center;
+}
