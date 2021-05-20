@@ -1,24 +1,30 @@
 import React from 'react'
+import GameChallenge from '../GameChallenge/GameChallenge';
+import TryAgain from '../TryAgain/TryAgain';
 import "./Game.css"
 
-const Game=()=> {
+const Game = ({
+    page,
+    timerStarted,
+    timeRemaining,
+    clicked,
+})=> {
     return (
         <div className="game">
+            
             <div>
-                <p>Hero name</p>
-                <input placeholder="Enter the hero name"></input>
-            </div>
-            <div>
-                <p>Heroine name</p>      
-                <input placeholder="Enter the heroine name"></input>
-            </div>
-            <div>
-                <p>Movie name</p>
-                <input placeholder="Enter the movie name"></input>
-            </div>
-            <div>
-                <p>Song name </p>
-                <input placeholder="Enter the song name"></input>
+            {
+                    timeRemaining > 1  ?
+                        (<div>
+                            <GameChallenge
+                                timerStarted={timerStarted}
+                                timeRemaining={timeRemaining}
+                            />
+                        </div>) :
+                        (<div>
+                            <TryAgain/>
+                        </div>)
+            }
             </div>
         </div>
     )

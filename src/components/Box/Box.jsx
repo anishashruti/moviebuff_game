@@ -1,26 +1,31 @@
 import React from 'react'
 import Game from "../Game/Game.jsx"
-import TryAgain from "../TryAgain/TryAgain.jsx"
+
 import "./Box.css"
-const Box=({no})=> {
+const Box = ({
+    page,
+    timerStarted,
+    timeRemaining,
+    clicked,
+})=> {
     return (
         <div className="box-container">
-            <div className="timer-container">
-            <p className="timer">5:00</p>
-            </div>
-            <br></br>
-            <div className="game-container">
-                {
-                    no === '1' ?
+            {
+                    page === 'game'  ?
                         (<div>
-                            <Game />
+                            <div className="game-container">
+                                <Game timerStarted={timerStarted} timeRemaining={timeRemaining} />
+                            </div>
                         </div>) :
-                        (<div>
-                            <TryAgain />
+                        (<div className="rules-container">
+                            <p>Hello this is the rule section</p>
+                            <button
+                                className="startgame"
+                                onClick={(e) => clicked(e.target.value)}> Start Game !
+                            </button>
                         </div>)
-                }
-                
-            </div>
+            }
+
         </div>
     )
 }

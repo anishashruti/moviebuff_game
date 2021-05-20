@@ -1,28 +1,54 @@
 .box-container{
     display:flex;
+    margin-top:2%;
+    margin-bottom:2%;
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
     flex-direction:column;
-    flex-grow:1;
+    height:auto;
     background-color: #8e9775c2;
     border-radius: 20px;
     padding: 25px;
     flex-wrap: wrap;
     box-shadow:10px 10px 10px 10px #4a503da9;
 }
-.timer-container{
-    background-color: #faf2da;
-    padding: 15px;
-    flex-wrap: wrap;
+.game-container{
+    margin-top:2%;
+    margin-bottom:2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    background-color: #e29083cc;
     border-radius: 20px;
-    width: 100px;
-    box-shadow:3px 3px 3px 3px #4a503d77;
+    box-shadow:5px 5px 5px 5px #4a503d5e;
 }
-
-.timer{
-    font-size:36px;
-    font-weight:600px;
-    margin: 0px;
-    text-align: center;
+.rules-container{
+    margin-top:2%;
+    margin-bottom:2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    background-color: #e29083cc;
+    border-radius: 20px;
+    box-shadow:5px 5px 5px 5px #4a503d5e;
+    align-items: center;
+}
+.startgame{
+    background-color: #faf2da;
+    box-shadow:3px 3px 3px 3px #4a503d77;
+    width:150px;
+    height:40px;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    font-size:20px;
+    transition: 0.3s
+}
+.startgame:hover{
+    background-color:#faf2dace;
+    box-shadow:6px 6px 6px 6px #4a503d77;
+    width:160px;
+    height:50px;
 }
