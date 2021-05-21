@@ -7,7 +7,14 @@ const Game = ({
     page,
     timerStarted,
     timeRemaining,
-    clicked,
+    startAgain,
+    imp_hero,
+    imp_heroine,
+    qn_hero,
+    qn_heroine,
+    points,
+    result,
+    getResult
 })=> {
     return (
         <div className="game">
@@ -19,10 +26,19 @@ const Game = ({
                             <GameChallenge
                                 timerStarted={timerStarted}
                                 timeRemaining={timeRemaining}
+                                imp_hero={imp_hero}
+                                imp_heroine={ imp_heroine }
+                                qn_hero={qn_hero}
+                                qn_heroine={qn_heroine}
+                                getResult={getResult}
                             />
                         </div>) :
                         (<div>
-                            <TryAgain/>
+                            <TryAgain
+                                startAgain={startAgain}
+                                points={points}
+                                result={result}
+                            />
                         </div>)
             }
             </div>

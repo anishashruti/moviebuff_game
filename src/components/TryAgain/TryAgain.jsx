@@ -1,18 +1,20 @@
 import React from 'react'
 import "./TryAgain.css"
 
-const TryAgain = () => {
+const TryAgain = ({startAgain,points,result }) => {
     const url = "https://github.com/anishashruti";
     return (
         <div className="tryagain">
             <div className="resultbox">
-                    <h1>
-                        You have won the game
-                    </h1>
-                    <p>Points: </p>
+                    <h2>
+                    You have { result } the game
+                    </h2>
+                <p>Points:{ points } </p>
             </div>
             <div>
-                <button className="end-buttons start-again-btn">
+                <button
+                    onClick={() => startAgain()}
+                    className="end-buttons start-again-btn">
                     Re-Try
                 </button>
                 <button

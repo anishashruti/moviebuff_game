@@ -7,18 +7,43 @@ const Box = ({
     timerStarted,
     timeRemaining,
     clicked,
+    startAgain,
+    qn_hero,
+    qn_heroine,
+    imp_hero,
+    imp_heroine,
+    points,
+    result,
+    getResult,
 })=> {
     return (
         <div className="box-container">
             {
                     page === 'game'  ?
                         (<div>
-                            <div className="game-container">
-                                <Game timerStarted={timerStarted} timeRemaining={timeRemaining} />
+                        <div className="game-container">
+                            <Game timerStarted={timerStarted}
+                                timeRemaining={timeRemaining}
+                                startAgain={startAgain}
+                                imp_hero={imp_hero}
+                                imp_heroine={imp_heroine}
+                                points={points}
+                                qn_hero={qn_hero}
+                                qn_heroine={qn_heroine}
+                                getResult={getResult}
+                                result={result}
+                            />
                             </div>
                         </div>) :
                         (<div className="rules-container">
-                            <p>Hello this is the rule section</p>
+                        <h1>Rules of the game:</h1>
+                        <ol>
+                            <li>Enter the Hero,Heroine,Move,Song name based on the hint</li>
+                            <li>You can view the clue but your score will be reduced by 3 points</li>
+                            <li>Answering each correct section will give you 5 points</li>
+                            <li>Spelling mistake will also be treated as wrong answer</li>
+                        </ol>
+                        <h4>That it!! <br></br> You can start the game now</h4>
                             <button
                                 className="startgame"
                                 onClick={(e) => clicked(e.target.value)}> Start Game !

@@ -32,23 +32,30 @@
     background-color: #e29083cc;
     border-radius: 20px;
     box-shadow:5px 5px 5px 5px #4a503d5e;
-    align-items: center;
+    
+}
+.rules-container > h1{
+    text-align:center;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+h4{
+    text-align:center;
 }
 .startgame{
     background-color: #faf2da;
     box-shadow:3px 3px 3px 3px #4a503d77;
-    width:150px;
-    height:40px;
+    width:170px;
+    height:50px;
     border: none;
     padding: 10px;
     border-radius: 12px;
-    border: none;
     font-size:20px;
-    transition: 0.3s
+    transition: width 0.2s, height 0.4s;
 }
 .startgame:hover{
     background-color:#faf2dace;
     box-shadow:6px 6px 6px 6px #4a503d77;
-    width:160px;
-    height:50px;
+    width:165px;
+    height:45px;
 }

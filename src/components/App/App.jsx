@@ -1,15 +1,39 @@
 import React, { Component } from 'react';
 import Box from "../Box/Box.jsx"
 import "./App.css"
-const time = 5
+import { QNS } from '../../data/questions'
+const time = 25
 const defaultState={
   page:" ",
   timerStarted: false,
   timeRemaining: time,
-  result:" ",
+  qn_hero: ' ',
+  qn_heroine: ' ',
+  qn_song: ' ',
+  qn_name:' ',
+  result: " ",
+  points:0,
 };
 class App extends Component {
   state = defaultState
+
+  componentDidMount() {
+    this.fetchNewQuestionFallback();
+  }
+
+  fetchNewQuestionFallback = () => {
+    const n= Math.floor(Math.random() * 11); 
+    this.setState({
+      ...defaultState,
+      qn_hero: QNS[n].hero,
+      qn_heroine: QNS[n].heroine,
+      qn_song: QNS[n].song,
+      qn_name:QNS[n].name,
+    });
+  };
+  
+  startAgain = () => this.fetchNewQuestionFallback();
+
   startTimer = () => {
     this.setState({ timerStarted: true });
     const timer = setInterval(() => {
@@ -29,15 +53,45 @@ class App extends Component {
     if (!this.state.timerStarted)
     {
       this.startTimer();
-      console.log('game started')
+      console.log(this.state.qn_hero)
+      console.log(this.state.qn_heroine)
       this.setState({
         page:'game'
       });
     }
-      
-    return;
     }
+  getHero = (imp_hero) => {
+    const ip_h = imp_hero.toLowerCase();
+    const crt = ip_h === this.state.qn_hero;
+    if (crt) {
+      this.setState({
+        points:this.state.points+5
+      });
+    }
+  }
+  getHeroine = (imp_heroine) => {
+    const ip_hr = imp_heroine.toLowerCase();
+    const crt = ip_hr === this.state.qn_heroine;
+    if (crt) {
+      this.setState({
+        points:this.state.points+5
+      });
+    }
+  }
+  getResult = () => {
+    if (this.state.points === 10)
+    {
+      this.setState({
+        result: " Won "
+      });
+    }else {
+      this.setState({
+        result: " Lost "
+      });
+    }
+    console.log(this.state.result)
 
+  }
   render() {
     return (
       <div className="App">
@@ -46,7 +100,16 @@ class App extends Component {
           page={this.state.page}
           timerStarted={this.state.timerStarted}
           timeRemaining={this.state.timeRemaining}
+          qn_hero={this.state.qn_hero}
+          qn_heroine={this.state.qn_heroine}
+          qn_song={this.state.qn_song}
+          qn_name={this.state.qn_name}
           clicked={this.startGame}
+          startAgain={this.startAgain}
+          imp_hero={this.getHero}
+          imp_heroine={this.getHeroine}
+          points={this.state.points}
+          getResult={this.getResult}
         />
         
       </div>
