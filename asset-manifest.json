@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/moviebuff_game/static/css/main.d0e1739b.chunk.css",
+    "main.js": "/moviebuff_game/static/js/main.5006d21c.chunk.js",
+    "main.js.map": "/moviebuff_game/static/js/main.5006d21c.chunk.js.map",
+    "runtime-main.js": "/moviebuff_game/static/js/runtime-main.5003500f.js",
+    "runtime-main.js.map": "/moviebuff_game/static/js/runtime-main.5003500f.js.map",
+    "static/js/2.1a4c4114.chunk.js": "/moviebuff_game/static/js/2.1a4c4114.chunk.js",
+    "static/js/2.1a4c4114.chunk.js.map": "/moviebuff_game/static/js/2.1a4c4114.chunk.js.map",
+    "index.html": "/moviebuff_game/index.html",
+    "static/css/main.d0e1739b.chunk.css.map": "/moviebuff_game/static/css/main.d0e1739b.chunk.css.map",
+    "static/js/2.1a4c4114.chunk.js.LICENSE.txt": "/moviebuff_game/static/js/2.1a4c4114.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5003500f.js",
+    "static/js/2.1a4c4114.chunk.js",
+    "static/css/main.d0e1739b.chunk.css",
+    "static/js/main.5006d21c.chunk.js"
+  ]
+}
