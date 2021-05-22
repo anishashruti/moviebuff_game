@@ -45,8 +45,13 @@ class App extends Component {
       } else {
         clearInterval(timer);
       }
-    
+
+      if (this.state.timerStarted)
+      {
+        this.getResult();
+      }
     }, 1000)
+
   };
 
   startGame = (clicked) => {
@@ -89,8 +94,6 @@ class App extends Component {
         result: " Lost "
       });
     }
-    console.log(this.state.result)
-
   }
   render() {
     return (
@@ -110,6 +113,7 @@ class App extends Component {
           imp_heroine={this.getHeroine}
           points={this.state.points}
           getResult={this.getResult}
+          result={this.state.result}
         />
         
       </div>

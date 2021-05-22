@@ -5,8 +5,8 @@ const TryAgain = ({startAgain,points,result }) => {
     const url = "https://github.com/anishashruti";
     return (
         <div className="tryagain">
-            <div className="resultbox">
-                    <h2>
+            <div  className="resultbox">
+                    <h2 id="result" >
                     You have { result } the game
                     </h2>
                 <p>Points:{ points } </p>

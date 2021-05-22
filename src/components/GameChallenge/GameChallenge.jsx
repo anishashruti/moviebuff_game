@@ -24,7 +24,7 @@ const GameChallenge = (
                     starts with {qn_hero[0]} letter </p>
                 <input
                     onChange={(e) => imp_hero(e.target.value)}    
-                    placeholder=" Type hero name here..."></input>
+                        placeholder=" Type hero name here..."></input>
             </div>
                 <div className="gamecards">
                 <p>Heroine name has {qn_heroine.length} letters,

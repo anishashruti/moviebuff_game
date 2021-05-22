@@ -38,6 +38,7 @@ const Game = ({
                                 startAgain={startAgain}
                                 points={points}
                                 result={result}
+                                getResult={getResult}
                             />
                         </div>)
             }
