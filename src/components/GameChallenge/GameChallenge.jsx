@@ -9,6 +9,10 @@ const GameChallenge = (
         qn_hero,
         qn_heroine,
         imp_hero,
+        imp_name,
+        imp_song,
+        qn_song,
+        qn_name,
         imp_heroine,
         getResult,
     })=> {
@@ -25,6 +29,7 @@ const GameChallenge = (
                 <input
                     onChange={(e) => imp_hero(e.target.value)}    
                         placeholder=" Type hero name here..."></input>
+                    <button className="hint-btn">Hint!</button>
             </div>
                 <div className="gamecards">
                 <p>Heroine name has {qn_heroine.length} letters,
@@ -32,14 +37,23 @@ const GameChallenge = (
                     <input
                         onChange={(e) => imp_heroine(e.target.value)} 
                         placeholder="Enter the heroine name"></input>
+                    <button className="hint-btn">Hint!</button>
                 </div>
             <div className="gamecards">
-                <p>Movie name</p>
-                <input placeholder="Enter the movie name"></input>
+                <p>Movie name has {qn_name.length} letters,
+                    starts with {qn_name[0]} letter</p>
+                    <input
+                        onChange={(e) => imp_name(e.target.value)} 
+                        placeholder="Enter the movie name"></input>
+                    <button className="hint-btn">Hint!</button>
             </div>
             <div className="gamecards">
-                <p>Song name </p>
-                    <input placeholder="Enter the song name"></input>        
+                <p>Song name  has {qn_song.length} letters,
+                    starts with {qn_song[0]} letter</p>
+                    <input
+                        onChange={(e) => imp_song(e.target.value)} 
+                        placeholder="Enter the song name"></input>
+                    <button className="hint-btn">Hint!</button>
             </div>
             </div>
             <div className="finished"  >

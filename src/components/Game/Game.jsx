@@ -10,8 +10,12 @@ const Game = ({
     startAgain,
     imp_hero,
     imp_heroine,
+    imp_name,
+    imp_song,
     qn_hero,
     qn_heroine,
+    qn_song,
+    qn_name,
     points,
     result,
     getResult
@@ -27,9 +31,13 @@ const Game = ({
                                 timerStarted={timerStarted}
                                 timeRemaining={timeRemaining}
                                 imp_hero={imp_hero}
-                                imp_heroine={ imp_heroine }
+                                imp_heroine={imp_heroine}
+                                imp_name={imp_name}
+                                imp_song={imp_song}
                                 qn_hero={qn_hero}
                                 qn_heroine={qn_heroine}
+                                qn_name={qn_name}
+                                qn_song={qn_song}
                                 getResult={getResult}
                             />
                         </div>) :

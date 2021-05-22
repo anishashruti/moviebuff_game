@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Box from "../Box/Box.jsx"
 import "./App.css"
 import { QNS } from '../../data/questions'
-const time = 25
+const time = 60
 const defaultState={
   page:" ",
   timerStarted: false,
@@ -60,6 +60,8 @@ class App extends Component {
       this.startTimer();
       console.log(this.state.qn_hero)
       console.log(this.state.qn_heroine)
+      console.log(this.state.qn_name)
+      console.log(this.state.qn_song)
       this.setState({
         page:'game'
       });
@@ -83,8 +85,26 @@ class App extends Component {
       });
     }
   }
+  getName = (imp_name) => {
+    const imp_n = imp_name.toLowerCase();
+    const crt = imp_n === this.state.qn_name;
+    if (crt) {
+      this.setState({
+        points:this.state.points+5
+      });
+    }
+  }
+  getSong = (imp_song) => {
+    const imp_s = imp_song.toLowerCase();
+    const crt = imp_s === this.state.qn_song;
+    if (crt) {
+      this.setState({
+        points:this.state.points+5
+      });
+    }
+  }
   getResult = () => {
-    if (this.state.points === 10)
+    if (this.state.points === 20)
     {
       this.setState({
         result: " Won "
@@ -111,6 +131,8 @@ class App extends Component {
           startAgain={this.startAgain}
           imp_hero={this.getHero}
           imp_heroine={this.getHeroine}
+          imp_name={this.getName}
+          imp_song={this.getSong}
           points={this.state.points}
           getResult={this.getResult}
           result={this.state.result}
