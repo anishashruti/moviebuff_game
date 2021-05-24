@@ -3,8 +3,6 @@ import "./GameChallenge.css"
 
 const GameChallenge = (
     {
-        page,
-        timerStarted,
         timeRemaining,
         qn_hero,
         qn_heroine,
@@ -12,10 +10,10 @@ const GameChallenge = (
         imp_name,
         imp_song,
         qn_song,
+        finished,
         qn_name,
         imp_heroine,
-        getResult,
-    })=> {
+    }) => {
     return (
         <div className="container">
                 <div className="timer-container">
@@ -24,40 +22,36 @@ const GameChallenge = (
             <br></br>
         <div className="game">
             <div className="gamecards">
-                    <p>Hero name has {qn_hero.length} letters,
-                    starts with {qn_hero[0]} letter </p>
+                    <p>Hero name starts with {qn_hero[0].toUpperCase} letter </p>
+                    <p className="hint-p">Hero name has {qn_hero.length} letters</p>
                 <input
                     onChange={(e) => imp_hero(e.target.value)}    
                         placeholder=" Type hero name here..."></input>
-                    <button className="hint-btn">Hint!</button>
             </div>
                 <div className="gamecards">
-                <p>Heroine name has {qn_heroine.length} letters,
-                    starts with {qn_heroine[0]} letter </p>   
+                <p>Heroine name starts with {qn_heroine[0].toUpperCase} letter </p>
+                <p className="hint-p">Heroine name has {qn_heroine.length} letters</p>
                     <input
                         onChange={(e) => imp_heroine(e.target.value)} 
                         placeholder="Enter the heroine name"></input>
-                    <button className="hint-btn">Hint!</button>
                 </div>
             <div className="gamecards">
-                <p>Movie name has {qn_name.length} letters,
-                    starts with {qn_name[0]} letter</p>
+                <p>Movie name starts with {qn_name[0].toUpperCase} letter</p>
+                <p className="hint-p">Movie name has {qn_name.length} letters</p>
                     <input
                         onChange={(e) => imp_name(e.target.value)} 
                         placeholder="Enter the movie name"></input>
-                    <button className="hint-btn">Hint!</button>
             </div>
             <div className="gamecards">
-                <p>Song name  has {qn_song.length} letters,
-                    starts with {qn_song[0]} letter</p>
+                <p>Song name starts with {qn_song[0].toUpperCase} letter</p>
+                <p className="hint-p">Song name has {qn_song.length} letters</p>
                     <input
                         onChange={(e) => imp_song(e.target.value)} 
                         placeholder="Enter the song name"></input>
-                    <button className="hint-btn">Hint!</button>
             </div>
             </div>
             <div className="finished"  >
-                   <button onClick={() => getResult()} className="finish-btn">Finished!!</button>
+                   <button onClick={() => finished()} className="finish-btn">Finished!!</button>
             </div>
             </div>
     )

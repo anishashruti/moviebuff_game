@@ -1,16 +1,17 @@
 body{
-    background-color: #faf2da;
+    background-image: url('bg.jpg');
     font-family: 'Raleway', sans-serif;
 }
 .page-title{
     font-family: 'Kaushan Script', cursive;
     font-size:60px;
+    color:white;
     text-align:center;
     animation: page-title 1s ease-in-out infinite alternate;
 }
 @keyframes page-title{
     from {
-      text-shadow: 0 0 10px #c5d4a0, 0 0 20px #98a37e, 0 0 30px #717a5c, 0 0 40px #5c634f, 0 0 50px #4e5341, 0 0 60px #2c3023, 0 0 70px #2e3126;
+      text-shadow: 0 0 10px #c5d4a0, 0 0 20px #98a37e, 0 0 30px #717a5c, 0 0 40px #5c634f, 0 0 50px #4e5341, 0 0 60px #2c3023, 0 0 70px #d4c411;
     }
     
     to {

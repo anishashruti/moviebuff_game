@@ -19,6 +19,7 @@ const Box = ({
     points,
     result,
     getResult,
+    finished,
 })=> {
     return (
         <div className="box-container">
@@ -40,6 +41,7 @@ const Box = ({
                                 qn_song={qn_song}
                                 getResult={getResult}
                                 result={result}
+                                finished={finished}
                             />
                             </div>
                         </div>) :

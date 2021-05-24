@@ -115,6 +115,12 @@ class App extends Component {
       });
     }
   }
+  finished = () => {
+    console.log('finished')
+    this.setState({
+      timeRemaining: 0
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -135,6 +141,7 @@ class App extends Component {
           imp_song={this.getSong}
           points={this.state.points}
           getResult={this.getResult}
+          finished={this.finished}
           result={this.state.result}
         />
         

@@ -18,7 +18,8 @@ const Game = ({
     qn_name,
     points,
     result,
-    getResult
+    getResult,
+    finished
 })=> {
     return (
         <div className="game">
@@ -38,6 +39,7 @@ const Game = ({
                                 qn_heroine={qn_heroine}
                                 qn_name={qn_name}
                                 qn_song={qn_song}
+                                finished={finished}
                                 getResult={getResult}
                             />
                         </div>) :

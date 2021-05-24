@@ -7,11 +7,11 @@
     align-items: center;
     flex-direction:column;
     height:auto;
-    background-color: #8e9775c2;
+    background-color: #000000b2;
     border-radius: 20px;
     padding: 25px;
     flex-wrap: wrap;
-    box-shadow:10px 10px 10px 10px #4a503da9;
+    box-shadow:10px 10px 10px 10px #36000eb9;
 }
 .game-container{
     margin-top:2%;
@@ -19,9 +19,9 @@
     margin-left: 5%;
     margin-right: 5%;
     padding: 20px;
-    background-color: #e29083cc;
+    background-color: #a32815e8;
     border-radius: 20px;
-    box-shadow:5px 5px 5px 5px #4a503d5e;
+    box-shadow:5px 5px 5px 5px #393a37bb;
 }
 .rules-container{
     margin-top:2%;
@@ -29,33 +29,36 @@
     margin-left: 5%;
     margin-right: 5%;
     padding: 20px;
-    background-color: #e29083cc;
+    background-color: #801201cc;
     border-radius: 20px;
-    box-shadow:5px 5px 5px 5px #4a503d5e;
+    color:white;
+    box-shadow:5px 5px 5px 5px #dfe2d59a;
     
 }
 .rules-container > h1{
     text-align:center;
     color: black;
+    position: relative;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 h4{
     text-align:center;
 }
 .startgame{
-    background-color: #faf2da;
-    box-shadow:3px 3px 3px 3px #4a503d77;
+    background-color: #d62727d2;
+    box-shadow:3px 3px 3px 3px #29131377;
     width:170px;
     height:50px;
     border: none;
+    align-items:center;
     padding: 10px;
     border-radius: 12px;
     font-size:20px;
     transition: width 0.2s, height 0.4s;
 }
 .startgame:hover{
-    background-color:#faf2dace;
-    box-shadow:6px 6px 6px 6px #4a503d77;
+    background-color:#d15050ce;
+    box-shadow:2px 4px 5px 6px #220e0eb0;
     width:165px;
     height:45px;
 }
