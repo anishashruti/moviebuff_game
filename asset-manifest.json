@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/moviebuff_game/static/css/main.4f1b40d6.chunk.css",
-    "main.js": "/moviebuff_game/static/js/main.e35c39a2.chunk.js",
-    "main.js.map": "/moviebuff_game/static/js/main.e35c39a2.chunk.js.map",
+    "main.css": "/moviebuff_game/static/css/main.73d245e5.chunk.css",
+    "main.js": "/moviebuff_game/static/js/main.c1966e84.chunk.js",
+    "main.js.map": "/moviebuff_game/static/js/main.c1966e84.chunk.js.map",
     "runtime-main.js": "/moviebuff_game/static/js/runtime-main.5003500f.js",
     "runtime-main.js.map": "/moviebuff_game/static/js/runtime-main.5003500f.js.map",
     "static/js/2.1a4c4114.chunk.js": "/moviebuff_game/static/js/2.1a4c4114.chunk.js",
     "static/js/2.1a4c4114.chunk.js.map": "/moviebuff_game/static/js/2.1a4c4114.chunk.js.map",
     "index.html": "/moviebuff_game/index.html",
-    "static/css/main.4f1b40d6.chunk.css.map": "/moviebuff_game/static/css/main.4f1b40d6.chunk.css.map",
+    "static/css/main.73d245e5.chunk.css.map": "/moviebuff_game/static/css/main.73d245e5.chunk.css.map",
     "static/js/2.1a4c4114.chunk.js.LICENSE.txt": "/moviebuff_game/static/js/2.1a4c4114.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/moviebuff_game/static/media/bg.880f813b.jpg"
+    "static/media/App.css": "/moviebuff_game/static/media/bg.8a08d8f8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.5003500f.js",
     "static/js/2.1a4c4114.chunk.js",
-    "static/css/main.4f1b40d6.chunk.css",
-    "static/js/main.e35c39a2.chunk.js"
+    "static/css/main.73d245e5.chunk.css",
+    "static/js/main.c1966e84.chunk.js"
   ]
 }
