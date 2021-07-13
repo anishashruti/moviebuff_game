@@ -23,6 +23,7 @@ const Box = ({
 })=> {
     return (
         <div className="box-container">
+             <h1 className="page-title">Movie-Buff</h1>
             {
                     page === 'game'  ?
                         (<div>
@@ -47,12 +48,12 @@ const Box = ({
                         </div>) :
                         (<div className="rules-container">
                         <h1>Rules of the game:</h1>
-                        <ol>
+                        <ul>
                             <li>Enter the Hero,Heroine,Move,Song name based on the hint</li>
                             <li>You can view the clue but your score will be reduced by 3 points</li>
                             <li>Answering each correct section will give you 5 points</li>
                             <li>Spelling mistake will also be treated as wrong answer</li>
-                        </ol>
+                        </ul>
                         <h4>That it!! <br></br> You can start the game now</h4>
                             <button
                                 className="startgame"

@@ -1,45 +1,46 @@
 .box-container{
     display:flex;
-    margin-top:2%;
-    margin-bottom:2%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin:5%;
+    width:90%;
     align-items: center;
     flex-direction:column;
     height:auto;
-    background-color: #000000b2;
+    color:white;
+    background-color: #0f0301f1;
     border-radius: 20px;
     padding: 25px;
-    flex-wrap: wrap;
-    box-shadow:10px 10px 10px 10px #36000eb9;
 }
+.page-title{
+    font-family: 'Kaushan Script', cursive;
+    font-size:60px;
+    color:white;
+    text-align:center;
+    animation: page-title 1s ease-in-out infinite alternate;
+}
+@keyframes page-title{
+    from {
+      text-shadow: 0 0 10px #d4a0a0, 0 0 20px #a37e7e, 0 0 30px #7a5c5c, 0 0 40px #634f4f, 0 0 50px #534141, 0 0 60px #302323, 0 0 70px #d41111;
+    }
+    
+    to {
+        text-shadow: 0 0 10px #e67c7c, 0 0 20px #f5bbbb, 0 0 30px #a38080, 0 0 40px #7a6262, 0 0 50px #664c4c, 0 0 60px #5c4747, 0 0 70px #201919;
+    }
+  }
+
 .game-container{
     margin-top:2%;
     margin-bottom:2%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 20px;
-    background-color: #a32815e8;
-    border-radius: 20px;
-    box-shadow:5px 5px 5px 5px #393a37bb;
 }
 .rules-container{
-    margin-top:2%;
-    margin-bottom:2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 20px;
-    background-color: #801201cc;
-    border-radius: 20px;
-    color:white;
-    box-shadow:5px 5px 5px 5px #dfe2d59a;
-    
-}
-.rules-container > h1{
+    height:400px;
+    font-size: 19px;
     text-align:center;
-    color: black;
-    position: relative;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.rules-container > ul{
+    list-style: none;
 }
 h4{
     text-align:center;
@@ -52,13 +53,22 @@ h4{
     border: none;
     align-items:center;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 5px;
     font-size:20px;
-    transition: width 0.2s, height 0.4s;
 }
 .startgame:hover{
-    background-color:#d15050ce;
-    box-shadow:2px 4px 5px 6px #220e0eb0;
-    width:165px;
-    height:45px;
+    background-color:#c70d35ce;
+    box-shadow:2px 4px 5px 6px #7405059f;
 }
+
+@media only screen and (max-width: 420px) {
+    .box-container {
+        width:80%;
+        height:auto;
+    }
+    .rules-container{
+        font-size: 16px;
+       margin:0;
+    }
+  }
+

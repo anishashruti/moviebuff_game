@@ -70,7 +70,7 @@ export const QNS = [
         "song":"raja raja kula",
     },
     {
-        "id": "10",
+        "id": "10",       
         "name":"theri",
         "hero":"vijay",
         "heroine": "samantha",

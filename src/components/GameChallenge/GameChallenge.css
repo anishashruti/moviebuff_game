@@ -7,21 +7,22 @@
     display: flex;
     flex-wrap: wrap;
     flex-grow: 2;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .gamecards{
-background-color: #faf2da;
+background-color: #9e3c3cf5;
+margin-bottom: 15px;
 width:400px;
 height:120px;
-border: 5px solid black;
-border-radius: 20px;
+border: 5px solid rgb(248, 238, 238);
+border-radius: 10px;
 padding: 10px;
 display: flex;
 flex-direction: column;
 align-items: center;
 }
 input{
-background-color: #faf2da;
+background-color: #9e3c3cf5;
 border:none;
 padding: 5px 10px;
 outline: none;
@@ -31,6 +32,7 @@ border-bottom: 2px  solid black;
 [placeholder]:focus::-webkit-input-placeholder {
     transition: text-indent 0.4s 0.4s ease; 
     text-indent: -100%;
+    color: #fff;
     opacity: 1;
  }
 
@@ -41,17 +43,17 @@ border-bottom: 2px  solid black;
     }
   }
   .timer-container{
-    background-color: #faf2da;
+    background-color: #9e3c3cf5;
+    color: white;
     padding: 15px;
     flex-wrap: wrap;
     border-radius: 20px;
-    width: 100px;
+    width: 130px;
     height: auto;
     margin: 0 auto;
     padding: 10px;
     position: relative;
     margin-bottom: 15px;
-    box-shadow:3px 3px 3px 3px #4a503d77;
 }
 
 .timer{
@@ -72,20 +74,16 @@ border-bottom: 2px  solid black;
 .finish-btn{
     background-color:#faf2da;
     box-shadow:3px 3px 3px 3px #4a503d77;
-    width: 100px;
+    width: 120px;
     height: 40px;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 2px;
     border: none;
     font-size:15px;
     transition: 0.3s;
 }
 .finish-btn:hover{
-    background-color:#faf2dace;
-    box-shadow:6px 6px 6px 6px #4a503d77;
-    width:120px;
-    height:50px;
-    font-size:20px;
+    background-color:#9e3c3cf5;
 }
 .hint-btn {
     background-color: #8e9775;

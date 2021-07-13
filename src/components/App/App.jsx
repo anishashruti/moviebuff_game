@@ -124,7 +124,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <h1 className="page-title">Movie-Buff</h1>
+     
         <Box
           page={this.state.page}
           timerStarted={this.state.timerStarted}
